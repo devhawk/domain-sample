@@ -32,7 +32,7 @@ This sample contract demonstrates a simple DNS-style registry. Records can
 be retrieved, updated and deleted. The launch.json file included in this
 repository demonstrates how to configure emulated storage.
 
-There are four profiles in [launch.json](.vscode\launch.json) for this contract:
+There are four profiles in [launch.json](.vscode/launch.json) for this contract:
 
 - **query empty** - query for a record when storage is empty
 - **query full** - query for a record when storage contains a relevant record
