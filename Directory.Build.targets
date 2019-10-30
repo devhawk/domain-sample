@@ -6,6 +6,6 @@
   -->
   <Target Name="NEONPublish" AfterTargets="Publish" Inputs="$(PublishDir)" 
           Outputs="$(PublishDir)$(TargetName).avm;$(TargetDir)$(TargetName).abi.json;$(TargetDir)$(TargetName).md.json">
-    <Exec WorkingDirectory="$(PublishDir)" Command="neon $(TargetFileName)"/>
+    <Exec WorkingDirectory="$(PublishDir)" Command="neon-de $(TargetFileName)"/>
   </Target>
 </Project>
