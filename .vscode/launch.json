@@ -1,0 +1,74 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "query empty",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}\\bin\\Debug\\netstandard2.0\\publish\\domain.avm",
+            "args": ["query", ["neo.org"]],
+            "return-types": ["string"],
+            "storage": [],
+            "runtime": {
+                "witnesses": {
+                    "check-result": true
+                }
+            }
+        },
+        {
+            "name": "query full",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}\\bin\\Debug\\netstandard2.0\\publish\\domain.avm",
+            "args": ["query", ["neo.org"]],
+            "return-types": ["string"],
+            "storage": [
+                {
+                    "key": "neo.org",
+                    "value": "NEO Foundation"
+                }
+            ],
+            "runtime": {
+                "witnesses": {
+                    "check-result": true
+                }
+            }
+        },
+        {
+            "name": "register succeed",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}\\bin\\Debug\\netstandard2.0\\publish\\domain.avm",
+            "args": ["register", ["neo.org", "NEO Foundation"]],
+            "return-types": ["bool"],
+            "storage": [],
+            "runtime": {
+                "witnesses": {
+                    "check-result": true
+                }
+            }
+        },
+        {
+            "name": "register fail",
+            "type": "neo-contract",
+            "request": "launch",
+            "program": "${workspaceFolder}\\bin\\Debug\\netstandard2.0\\publish\\domain.avm",
+            "args": ["register", ["neo.org", "Harry Pierson"]],
+            "return-types": ["bool"],
+            "storage": [
+                {
+                    "key": "neo.org",
+                    "value": "NEO Foundation"
+                }
+            ],
+            "runtime": {
+                "witnesses": {
+                    "check-result": true
+                }
+            }
+        },
+    ]
+}
