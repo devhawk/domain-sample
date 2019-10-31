@@ -28,7 +28,7 @@
             "storage": [
                 {
                     "key": "neo.org",
-                    "value": "NEO Foundation"
+                    "value": "Neo Foundation"
                 }
             ],
             "runtime": {
@@ -42,7 +42,7 @@
             "type": "neo-contract",
             "request": "launch",
             "program": "${workspaceFolder}\\bin\\Debug\\netstandard2.0\\publish\\domain.avm",
-            "args": ["register", ["neo.org", "NEO Foundation"]],
+            "args": ["register", ["neo.org", "Neo Foundation"]],
             "return-types": ["bool"],
             "storage": [],
             "runtime": {
@@ -61,7 +61,7 @@
             "storage": [
                 {
                     "key": "neo.org",
-                    "value": "NEO Foundation"
+                    "value": "Neo Foundation"
                 }
             ],
             "runtime": {
