@@ -5,7 +5,7 @@
   https://github.com/neo-project/neo-devpack-dotnet/issues/78  
   -->
   <Target Name="NEONPublish" AfterTargets="Publish" Inputs="$(PublishDir)" 
-          Outputs="$(PublishDir)$(TargetName).avm;$(TargetDir)$(TargetName).abi.json;$(TargetDir)$(TargetName).md.json">
-    <Exec WorkingDirectory="$(PublishDir)" Command="neon-de $(TargetFileName)"/>
+          Outputs="$(PublishDir)$(TargetName).avm;$(TargetDir)$(TargetName).abi.json;$(TargetDir)$(TargetName).avmdbgnfo">
+    <Exec WorkingDirectory="$(PublishDir)" Command="neon $(TargetFileName)"/>
   </Target>
 </Project>

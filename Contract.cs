@@ -1,5 +1,7 @@
 using Neo.SmartContract.Framework.Services.Neo;
 
+[assembly: Neo.SmartContract.Framework.Features(ContractPropertyState.HasStorage)]
+
 namespace Neo.SmartContract
 {
     public class Domain : Framework.SmartContract
