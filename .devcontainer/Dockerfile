@@ -4,9 +4,8 @@ RUN apt-get update \
     && export DEBIAN_FRONTEND=noninteractive \
     #
     # Neo tools / dependencies
-    && dotnet tool install -g neo.neon \
-    && dotnet tool install -g neo.express \
     && apt-get -y --no-install-recommends install git libsnappy-dev libc6-dev \
+    && dotnet tool restore \
     #
     # Clean up
     && apt-get autoremove -y \

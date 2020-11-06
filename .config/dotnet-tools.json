@@ -7,6 +7,12 @@
       "commands": [
         "neon"
       ]
+    },
+    "neo.express": {
+      "version": "1.1.28",
+      "commands": [
+        "neo-express"
+      ]
     }
   }
 }
